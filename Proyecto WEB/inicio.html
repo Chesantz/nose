@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonido EXO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg class="bars-icon" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a class="btn1" href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a class="btn1" href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+        <li><a class="btn1" href="#Nosotros"><i class="fa-solid fa-users"></i> Nosotros</a></li>
+        <li><a class="btn1" href="contacto.html"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+    </ul>
+    <header class="header">
+        <img src="imagenes/logo.png" class="logo" alt="Logo">
+        <ul class="nav-links">
+            <ul class="nav-link">
+            <li><a class="btn3" href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            </ul>
+            <li><a class="btn" href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+            <ul class="nav-drop">
+            <li><a class="btn" href="#Nosotros"><i class="fa-solid fa-users"></i> Nosotros <i class="fas fa-caret-down"></i></a>
+                <div class="dropmenu">
+                    <ul class="nav-link1">
+                        <li><a class="btn2" href="#galeria"><i class="fa-solid fa-image"></i> Galería</a></li>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+            <li><a class="btn" href="contacto.html"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+        </ul>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </header>
+    <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+	    <i class="fa-brands fa-whatsapp fa-1x"></i>
+	</a>
+    <span class="btn-arriba"><i class="fa-solid fa-chevron-up"></i></span>
+    <div class="container">
+	
+        <div class="wrapper">
+            <img src="image-inicio/image-1.jpg" class="active">
+            <img src="image-inicio/image-2.jpg">
+            <img src="image-inicio/image-3.jpg">
+            <img src="image-inicio/image-4.jpg">
+            <img src="image-inicio/image-5.jpg">
+        </div>
+    
+        <div class="buttons">
+            <span class="next">&#10095;</span>
+            <span class="prev">&#10094;</span>
+        </div>
+    
+        <div class="dotsContainer">
+            <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+            <div class="dot" attr='1' onclick="switchImage(this)"></div>
+            <div class="dot" attr='2' onclick="switchImage(this)"></div>
+            <div class="dot" attr='3' onclick="switchImage(this)"></div>
+            <div class="dot" attr='4' onclick="switchImage(this)"></div>
+        </div>
+    
+    </div>
+        <div class="contenido1">
+            <div class="orange-box"></div>
+            <h1>¿Quienes Somos?</h1>
+            <p class="par">Somos un equipo dedicado a brindarte la mejor calidad<br>
+             de audio, música, show y entretenimiento, con un<br>
+             personal amable y siempre a tu disposición.</p> 
+
+            <button class="cn"><a href="#paquetes">Contratanos <i class="fa-solid fa-bag-shopping"></i></a></button>      
+        </div>
+    <section class="content sou">
+        <div id="paquetes" class="contenido2">
+            <h1>Paquetes</h1>
+            <h2>Descubre Nuestros Paquetes Especiales para Tu Fiesta</h2>
+            <p class="par">¿Estás planeando una fiesta inolvidable? ¡Tenemos justo lo que necesitas! Ofrecemos tres paquetes<br>
+            exclusivos diseñados para adaptarse a tus necesidades y hacer de tu evento una experiencia única y<br> 
+            memorable. Escoge el que más te guste y déjanos encargarnos del resto. 🎉</p>
+            <div class="box-contenido">
+                <div class="box1">
+                    <h3>Paquete Chico <i class="fa-solid fa-box-open"></i></h3>
+                    <p><span>Cuenta con:</span><br>
+                    2 bocinas<br>
+                    4 luces<br>
+                    Dj animador</p>
+
+                    <button class="btn-inf"><a href="#">Ver más <i class="fa-solid fa-circle-info"></i></i></i></a></button>
+                </div>
+                <div class="box1">
+                    <h3>Paquete Medio <i class="fa-solid fa-box-open"></i></h3>
+                    <p><span>Cuenta con:</span><br>
+                    4 bocinas<br>
+                    6 luces<br>
+                    1 Pantalla<br>
+                    Dj animador</p>
+
+                    <button class="btn-inf2"><a href="#">Ver más <i class="fa-solid fa-circle-info"></i></i></i></a></button>
+                </div>
+                <div class="box1">
+                    <h3>Paquete Grande <i class="fa-solid fa-box-open"></i></h3>
+                    <p><span>Cuenta con:</span><br>
+                    6 bocinas<br>
+                    8 luces<br>
+                    1 Camara de humo<br>
+                    1 Pantalla<br>
+                    Dj animador</p>
+
+                    <button class="btn-inf3"><a href="#">Ver más <i class="fa-solid fa-circle-info"></i></i></i></a></button>
+                </div>
+        </div>
+    </section>
+    <section class="content1 nosotros">
+        <div id="Nosotros" class="contenido3">
+            <h1>Sobre Nosotros</h1>
+            <h2>SONIDO EXO</h2>
+            <p class="par">Somos un equipo apasionados por la música y dedicados<br> a crear experiencias inolvidables en
+                cada evento. Con<br> años de experiencia en la industria, nuestra misión es<br>llevar la energía y la emoción 
+                de la música a cada<br> rincón del lugar donde estemos.</p>
+            <button class="btn-inf"><a href="#">Ver más <i class="fa-solid fa-circle-info"></i></a></button>    
+            <div class="container2">
+                <div class="wrapper2">
+                    <img src="img-equipo/foto1.jpg">
+                    <img src="img-equipo/foto2.jpg">
+                    <img src="img-equipo/foto3.jpg">
+                    <img src="img-equipo/foto4.jpg">
+                </div>
+            </div>
+        <div class="contenido-galeria" id="galeria">
+            <h1>Galería</h1>
+            <p class="par">Sumérgete en la magia de nuestros eventos pasados. Descubre cómo <br>transformamos cada ocasión en una experiencia inolvidable.</p>
+        </div>
+    </section>
+    <section class="content2 contacto1">
+        <div id="Contacto" class="contenido4">
+            <h1 class="logo3"><span>Contacto</span></h1>
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Envia un Mensaje</h3>
+                    <form action="https://formsubmit.co/smunozriv@gmail.com" method="POST">
+                        <p>
+                            <label>Primer Nombre</label>
+                            <input type="text" name="name" placeholder="Juan">
+                        </p>
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="last-name" placeholder="Hernández">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="example@gmail.com">
+                        </p>
+                        <p>
+                            <label>Número Telefonico</label>
+                            <input type="tel" name="phone" placeholder="+52 444 444 4444">
+                        </p>
+                        <p class="block">
+                        <label>Message</label> 
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/inicio.html">
+                            <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Datos de Contacto</h4>
+                    <p>
+                        <b>¡Gracias por elegirnos para llevar el ritmo a tu evento!</b>
+                        <br>
+                            Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. <br>
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 444 260 1660</li>
+                        <li><i class="fa-solid fa-envelope"></i> sonidoexo@outlook.com</li>
+                        <li><a href="https://www.facebook.com/SonidoExo/?locale=es_LA"></a><i class="fa-brands fa-facebook-f"></i> Sonido EXO</li>
+                    </ul>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d816.6587832247865!2d-101.01648819824909!3d22.171314971452322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x842a9f5412c6b56f%3A0xa0683c750ab9f63c!2sSonido%20Exo%2C%20Jacarandas%2C%20Morales%20Saucito%2C%20San%20Luis%20Potosi!3m2!1d22.1715286!2d-101.0157875!4m3!3m2!1d22.17166!2d-101.01585999999999!5e1!3m2!1ses!2smx!4v1723312406925!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>        
+    <script src="script.js"></script>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="inicio.html" class="menu-icon"> Inicio </a>
+          </li>
+          <li class="menu-elem">
+            <a href="paquetes.html" class="menu-icon"> Paquetes </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Nosotros </a>
+          </li>
+          <li class="menu-elem">
+            <a href="contacto.html" class="menu-icon"> Contacto</a>
+          </li>
+        </ul>
+        <p class="text">@2024 | Todos los derechos reservados</p>
+      </footer>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>
+

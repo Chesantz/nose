@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonido EXO</title>
+    <link rel="stylesheet" href="cnt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg class="bars-icon" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a class="btn1" href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a class="btn1" href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+        <li><a class="btn1" href="#Nosotros"><i class="fa-solid fa-users"></i> Nosotros</a></li>
+        <li><a class="btn1" href="contacto.html"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+    </ul>
+    <header class="header">
+        <ul class="nav-links left">
+            <li><a class="btn" href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a class="btn" href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+        </ul>
+        <img src="imagenes/logo.png" class="logo" alt="Logo">
+        <ul class="nav-links right">
+            <li><a class="btn" href="#Nosotros"><i class="fa-solid fa-users"></i> Nosotros</a></li>
+            <li><a class="btn" href="contacto.html"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+        </ul>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </header>
+    <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank">
+	    <i class="fa-brands fa-whatsapp fa-1x"></i>
+	</a>
+    <section class="content2 contacto1">
+        <div id="Contacto" class="contenido4">
+            <h1 class="logo3"> <span>Contactos</span></h1>
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Envia un Mensaje</h3>
+                    <form action="">
+                        <p>
+                            <label>Primer Nombre</label>
+                            <input type="text" name="fullname" placeholder="Juan">
+                        </p>
+                        <p>
+                            <label>Apellido</label>
+                            <input type="email" name="email" placeholder="Hernández">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="tel" name="email" placeholder="example@gmail.com">
+                        </p>
+                        <p>
+                            <label>Número Telefonico</label>
+                            <input type="text" name="phone" placeholder="+52 444 444 4444">
+                        </p>
+                        <p class="block">
+                        <label>Message</label> 
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Datos de Contacto</h4>
+                    <p>
+                        <b>¡Gracias por elegirnos para llevar el ritmo a tu evento!</b>
+                        <br>
+                            Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. <br>
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> (111) 111 111 111</li>
+                        <li><i class="fa-solid fa-envelope"></i> contact@website.com</li>
+                        <li><a href="https://www.facebook.com/SonidoExo/?locale=es_LA"><i class="fa-brands fa-facebook"></i> Sonido EXO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>        
+    <script src="script.js"></script>
+</body>
+</html>
+
